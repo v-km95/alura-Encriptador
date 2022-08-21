@@ -195,17 +195,16 @@ main{
     }
     .cont2{
         position: absolute;
-        top: 45em;
-        width: 90%;
+        top: 43em;
+        width: 100%;
         margin: 0;
         height: 50vh
     }
     .muñeco, .muñeco img, #texto1, #texto2{
         width: 200px;
-        top: 0;
     }
     .muñeco img{
-        visibility: hidden;
+        display: none;
     }
     .frame1{
         margin: 2em auto;
@@ -228,7 +227,7 @@ main{
         width: 200px;
     }
     .muñeco img{
-        visibility: hidden;
+        display: none;
     }
     .frame1{
         margin: 2em auto;
@@ -255,7 +254,7 @@ main{
         top: 15vh;
     }
     .muñeco img{
-        visibility: visible;
+        display: initial;
     }
     .frame3{
         flex-direction: row;
