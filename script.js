@@ -49,7 +49,7 @@ function mostrarResultado() {
     document.getElementById('display').style.visibility = 'hidden';
     document.getElementById('textoResultado').style.visibility = 'visible';
     document.getElementById('textoResultado').innerText = nuevaCadena;
-    document.getElementById('btnCopiar').style.visibility = 'visible';
+    document.getElementById('btnCopiar').style.display = 'initial';
 }
 
 buttonEnc.onclick = function () {
