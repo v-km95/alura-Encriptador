@@ -48,19 +48,24 @@ function encSustitucion(caracter) {
 function mostrarResultado() {
     document.getElementById('display').style.visibility = 'hidden';
     document.getElementById('textoResultado').style.visibility = 'visible';
+    document.getElementById('textoResultado').style.display = 'block';
     document.getElementById('textoResultado').innerText = nuevaCadena;
     document.getElementById('btnCopiar').style.display = 'initial';
+    document.getElementById('btnCopiar').style.visibility = 'visible';
+    document.getElementById('muñeco').style.display = 'none';
 }
 
 buttonEnc.onclick = function () {
     var x = document.getElementById("area-texto").value;
-    encriptar(x);
+    var xLower = x.toLowerCase();
+    encriptar(xLower);
     mostrarResultado();
 }
 
 buttonDes.onclick = function () {
     var x = document.getElementById("area-texto").value;
-    desencriptar(x);
+    var xLower = x.toLowerCase();
+    desencriptar(xLower);
     mostrarResultado();
 }
 

@@ -73,6 +73,15 @@ main{
     gap: 24px;
 }
 
+.frame4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    justify-content: center;
+}
+
 #btnEncriptar {
     padding: 24px;
     width: 328px;
@@ -126,9 +135,11 @@ main{
     font-size: 24px;
     line-height: 150%;
     color: #495057;
+    display: none;
 }
 
-.muñeco {
+#muñeco {
+    display: block;
     position: relative;
     width: 336px;
     height: 304px;
@@ -195,15 +206,20 @@ main{
     }
     .cont2{
         position: absolute;
-        top: 43em;
+        top: 38em;
         width: 100%;
         margin: 0;
         height: 50vh
     }
-    .muñeco, .muñeco img, #texto1, #texto2{
+    #textoResultado{
+        height: calc(50vh - 2em);
+        max-height: calc(50vh - 2em);
+        overflow: auto;
+    }
+    #muñeco, #muñeco img, #texto1, #texto2{
         width: 200px;
     }
-    .muñeco img{
+    #muñeco img{
         display: none;
     }
     .frame1{
@@ -224,10 +240,10 @@ main{
         top: 33em;
         margin: 0 auto;
     }
-    .muñeco, .muñeco img, #texto1, #texto2{
+    #muñeco, #muñeco img, #texto1, #texto2{
         width: 200px;
     }
-    .muñeco img{
+    #muñeco img{
         display: none;
     }
     .frame1{
@@ -250,11 +266,16 @@ main{
         margin: 2em 2em;
         height: 90vh;
     }
-    .muñeco, .muñeco img, #texto1, #texto2{
+    #textoResultado{
+        height: calc(70vh - 2em);
+        max-height: calc(70vh - 2em);
+        overflow: auto;
+    }
+    #muñeco, #muñeco img, #texto1, #texto2{
         width: 336px;
         top: 15vh;
     }
-    .muñeco img{
+    #muñeco img{
         display: initial;
     }
     .frame3{
