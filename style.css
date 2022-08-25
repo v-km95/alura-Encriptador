@@ -200,6 +200,16 @@ main{
     display: none;
 }
 
+#btnCopiar:hover, #btnDesencriptar:hover, #btnEncriptar:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+
+#btnCopiar:active, #btnDesencriptar:active, #btnEncriptar:active{
+    opacity: .6;
+    transition-duration: .1s;
+}
+
 @media screen and (min-width: 320px) {
     .cont1{
         width: 100%
@@ -277,6 +287,9 @@ main{
     }
     #muñeco img{
         display: initial;
+    }
+    .frame1{
+        margin: 14.5em 0 2em 0;
     }
     .frame3{
         flex-direction: row;

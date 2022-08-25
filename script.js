@@ -55,18 +55,34 @@ function mostrarResultado() {
     document.getElementById('muñeco').style.display = 'none';
 }
 
+function comprobarcadena(textoParaComprobar) {
+    if(textoParaComprobar !=''){
+
+    }
+}
+
 buttonEnc.onclick = function () {
     var x = document.getElementById("area-texto").value;
     var xLower = x.toLowerCase();
-    encriptar(xLower);
-    mostrarResultado();
+    if(xLower != ''){
+        encriptar(xLower);
+        mostrarResultado();
+    }
+    else{
+        document.getElementById('area-texto').placeholder = 'Por favor ingrese un texto para empezar';
+    }
 }
 
 buttonDes.onclick = function () {
     var x = document.getElementById("area-texto").value;
     var xLower = x.toLowerCase();
-    desencriptar(xLower);
-    mostrarResultado();
+    if(xLower != ''){
+        desencriptar(xLower);
+        mostrarResultado();
+    }
+    else{
+        document.getElementById('area-texto').placeholder = 'Por favor ingrese un texto para empezar';
+    }
 }
 
 buttonCopiar.onclick = function () {
